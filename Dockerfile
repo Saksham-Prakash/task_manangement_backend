@@ -42,7 +42,7 @@ COPY pom.xml ./
 COPY src ./src
 
 # Package the application
-RUN ./mvnw package -DskipTests
+# RUN ./mvnw package -DskipTests
 
 # Use a minimal base image for the final stage
 FROM eclipse-temurin:21-jre-alpine
